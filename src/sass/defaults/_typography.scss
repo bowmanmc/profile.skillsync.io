@@ -1,10 +1,11 @@
 $modular-scale-base: 1em;
-$heading-stack: "Lato", "Arial", sans-serif;
+$heading-stack: "Fjalla One", "Arial", sans-serif;
 $body-stack: "Merriweather", "Georgia", serif;
 
 body, p {
   font-family: $body-stack;
   font-size: modular-scale(1, 0.7em);
+  color: $color-txt;
 
   @include media($lg-mobile) {
     font-size: modular-scale(1, 0.9em);
@@ -32,7 +33,7 @@ h1, h2, h3, h4, h5 {
 }
 
 h1 {
-  font-size: modular-scale(5, 0.7em);
+  font-size: modular-scale(6, 0.7em);
 
   @include media($lg-mobile) {
     font-size: modular-scale(5, 0.9em);

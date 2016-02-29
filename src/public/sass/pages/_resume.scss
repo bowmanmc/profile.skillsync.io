@@ -28,28 +28,68 @@ h1 {
     margin: 10px;
 }
 
-.skillSummary {
-    margin: 30px;
+.skillSummary h2 {
+    text-align: center;
+    margin: 20px;
 }
 
-.skillSummary li {
+.skillSummary table {
+    width: 80%;
+    font-family: $body-stack;
+    line-height: 1.6em;
+    font-size: modular-scale(1, 0.8em);
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+.skillSummary tr + tr {
+    border-top: 0.25px dotted $color-txt-light;
+}
+
+.skill {
+    border-right: solid 1px $color-txt;
+    width: 50%;
+    text-align: right;
+    padding: 5px 10px 5px 0;
+}
+
+.level {
+    padding-left: 10px;
+    vertical-align: middle;
+}
+
+.level div {
+    height: 10px;
+    background-color: $color-light-teal;
+}
+
+.expert {
+    width: 150px;
+}
+
+.medium {
+    width: 100px;
+}
+
+.beginner {
+    width: 50px;
+}
+
+//***********
+
+.skillsList li {
     font-family: $body-stack;
     line-height: 1.6em;
     font-size: modular-scale(1, 0.8em);
 }
 
-.skillSummary h2 {
-    text-align: center;
-    margin-bottom: 20px;
+.skills {
+    @include span-columns(6);
+    padding-right: 10px;
+    border-right: 1px $color-txt solid;
+    text-align: right;
 }
 
-.skillsLists {
-    display: inline;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-.skillsList1 {
-    float: left;
-    margin-right: 20px;
+.skillLevel {
+    @include span-columns(6);
 }

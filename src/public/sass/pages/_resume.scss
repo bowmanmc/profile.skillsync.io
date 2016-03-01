@@ -5,6 +5,13 @@
     @include outer-container(100%);
 
     section {
-        
+
+        //border: 1px solid #0f0;
+        margin: 0.5em 0;
+
+        h2 {
+            letter-spacing: 0.065em;
+            text-transform: uppercase;
+        }
     }
 }

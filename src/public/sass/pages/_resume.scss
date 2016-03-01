@@ -6,12 +6,21 @@
 
     section {
 
-        //border: 1px solid #0f0;
-        margin: 0.5em 0;
+        margin: 0.5em 0 2.5em 0;
 
         h2 {
             letter-spacing: 0.065em;
             text-transform: uppercase;
         }
+
+        .section__icon {
+
+            svg {
+                fill: $color-resume-dark;
+                height: 48px;
+                width: 48px;
+            }
+        }
+
     }
 }

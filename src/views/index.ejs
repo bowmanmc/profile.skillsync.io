@@ -7,49 +7,22 @@
 
     <% include partials/svg %>
 
-    <header>
-        <div class="headshot">
-        </div>
+    <!-- Header Box -->
+    <header class="header">
+
+        <div class="headshot"></div>
 
         <h1><%= account.name %></h1>
 
-        <div class="social">
-            <ul>
-                <li class="email">
-                    <svg class="social__icon">
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-mail"></use>
-                    </svg>
-                </li>
-                <li class="website">
-                    <svg class="social__icon">
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-sphere"></use>
-                    </svg>
-                </li>
-                <li class="github">
-                    <svg class="social__icon">
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-github"></use>
-                    </svg>
-                </li>
-                <li class="linkedin">
-                    <svg class="social__icon">
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-linkedin"></use>
-                    </svg>
-                </li>
-                <li class="twitter">
-                    <svg class="social__icon">
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-twitter"></use>
-                    </svg>
-                </li>
-            </ul>
-        </div>
-
-
+        <% include partials/social %>
     </header>
+    <!-- /Header Box -->
 
-    <!--<div class="skillSummary">
-        <h2>Skills</h2>
-        <div class="skillsList">
-            <ul class="skills">
+    <div class="resume">
+
+        <section class="skillSummary">
+            <h2>Skills</h2>
+            <ul>
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>JavaScript</li>
@@ -57,46 +30,24 @@
                 <li>Responsive Development</li>
                 <li>Writing</li>
             </ul>
-            <ul class="skillLevel">
-                <li><span class="expert"></span></li>
-                <li><span class="expert"></span></li>
-                <li><span class="medium"></span></li>
-                <li><span class="medium"></span></li>
-                <li><span class="beginner"></span></li>
-                <li><span class="beginner"></span></li>
-            </ul>
-        </div>
-    </div>-->
+        </section>
 
-    <div class="skillSummary">
-        <h2>Skills</h2>
-        <table>
-            <tr>
-                <td class="skill">HTML</td>
-                <td class="level"><div class="expert"></div></td>
-            </tr>
-            <tr>
-                <td class="skill">CSS</td>
-                <td class="level"><div class="expert"></div></td>
-            </tr>
-            <tr>
-                <td class="skill">JavaScript</td>
-                <td class="level"><div class="medium"></div></td>
-            </tr>
-            <tr>
-                <td class="skill">Front End Development</td>
-                <td class="level"><div class="medium"></div></td>
-            </tr>
-            <tr>
-                <td class="skill">Responsive Development</td>
-                <td class="level"><div class="beginner"></div></td>
-            </tr>
-            <tr>
-                <td class="skill">Writing</td>
-                <td class="level"><div class="beginner"></div></td>
-            </tr>
-        </table>
-    </div>
+        <section class="summary">
+            <h2>Executive Summary</h2>
+        </section>
+
+        <section class="projects">
+            <h2>Projects</h2>
+        </section>
+
+        <section class="work">
+            <h2>Employment History</h2>
+        </section>
+
+        <section class="education">
+            <h2>Education and Certifications</h2>
+        </section>
+    </div><!-- resume -->
 
 </body>
 

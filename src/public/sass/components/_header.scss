@@ -1,12 +1,13 @@
 .header {
-    background-color: $color-resume-dark;
-    color: $color-resume-light;
+    color: $color-resume-navy;
+    margin-bottom: 2em;
 
 
     h1 {
-        letter-spacing: 0.065em;
         padding: 0.5em 0.25em;
         text-align: center;
+        letter-spacing: 0.05em;
+
     }
 }
 
@@ -19,10 +20,10 @@
     }
 
     a {
-        fill: $color-resume-light;
+        fill: $color-resume-navy;
 
         &:hover {
-            fill: $color-light-teal;
+            fill: $color-resume-yellow;
         }
     }
 

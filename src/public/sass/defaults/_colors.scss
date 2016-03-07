@@ -16,6 +16,5 @@ $color-contrast-mix: mix($color-green, $color-contrast, 25%);
 $color-resume-dark: #131619;
 $color-resume-light: #f3f6f5;
 $color-resume-navy: #1f2a40;
-$color-resume-salmon: #d94436;
-$color-resume-blue: #1b345b;
 $color-resume-yellow: #f1c40f;
+$color-resume-yellow-light: scale-color($color-resume-yellow, $lightness: 50%);

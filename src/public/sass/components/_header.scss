@@ -11,6 +11,14 @@
     }
 }
 
+.header__title {
+    font-family: $heading-stack;
+    font-size: modular-scale(1);
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
 .social {
     text-align: center;
 

@@ -72,19 +72,21 @@
                     </ul>
                     <ul class="links">
                         <li>
+                            <div class="item__project">
+                                <a href="<%= project.url %>">
+                                    <svg class="link__icon">
+                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-sphere"></use>
+                                    </svg>
+                                    <span class="link-txt"><%= project.name %></span>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
                             <a href="<%= project.repo %>">
                                 <svg class="link__icon">
                                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-github"></use>
                                 </svg>
-                                <span class="link-txt"><%= project.repo %></span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="<%= project.url %>">
-                                <svg class="link__icon">
-                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-sphere"></use>
-                                </svg>
-                                <span class="link-txt"><%= project.url %></span>
+                                <span class="link-txt">Github Repository</span>
                             </a>
                         </li>
                     </ul>

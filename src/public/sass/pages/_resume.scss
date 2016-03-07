@@ -4,6 +4,8 @@
 
     @include outer-container(100%);
 
+    color: $color-txt;
+
     section {
 
         margin: 0.5em 0 2.5em 0;
@@ -15,6 +17,33 @@
             margin-bottom: 0.25em;
         }
 
+        h3 {
+            width: 83%;
+            margin: 0.5em auto 0 auto;
+        }
+
+        p, li {
+            width: 73%;
+            margin: 1em auto 0 auto;
+        }
+
+        .links a {
+            fill: $color-resume-navy;
+            color: $color-resume-navy;
+
+            &:hover {
+                fill: $color-resume-yellow;
+                color: $color-resume-yellow;
+            }
+        }
+
+        .link__icon {
+            width: 20px;
+            height: 20px;
+        }
+
+
+
         .section__icon {
 
             svg {
@@ -25,10 +54,7 @@
             }
         }
 
-        p {
-            width: 80%;
-            margin: 1em auto 0 auto;
-        }
+
 
     }
 }

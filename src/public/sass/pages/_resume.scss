@@ -32,15 +32,14 @@
             color: $color-resume-navy;
 
             &:hover {
-                fill: $color-resume-yellow;
-                color: $color-resume-yellow;
+                fill: $color-contrast;
+                color: $color-contrast;
             }
         }
 
         .link__icon {
             width: 15px;
             height: 15px;
-            //vertical-align: middle;
             float: left;
             display: inline-block;
         }
@@ -56,5 +55,21 @@
             display: inline-block;
             float: left;
         }
+
+        .skill__icon {
+            fill: $color-contrast;
+            width: 15px;
+            height: 15px;
+            float: left;
+            display: inline-block;
+        }
+
+        .skill__text {
+            margin-left: 1.5em;
+            color: $color-contrast;
+        }
+
+
     }
+
 }

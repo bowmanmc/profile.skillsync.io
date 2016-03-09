@@ -15,16 +15,28 @@
             text-transform: uppercase;
             color: $color-resume-navy;
             margin: 0 0 0.25em 55px;
+
+            @include media ($lg-mobile) {
+                margin-left: 65px;
+            }
         }
 
         h3 {
             width: 83%;
             margin: 0.5em 0 0 40px;
+
+            @include media ($lg-mobile) {
+                margin-left: 50px;
+            }
         }
 
         p, li {
             width: 73%;
             margin: 1em 0 0 55px;
+
+            @include media ($lg-mobile) {
+                margin-left: 65px;
+            }
         }
 
         .links a {
@@ -42,10 +54,19 @@
             height: 15px;
             float: left;
             display: inline-block;
+
+            @include media($lg-mobile) {
+                width: 25px;
+                height: 25px;
+            }
         }
 
         .link-txt {
             margin-left: 1.5em;
+
+            @include media($lg-mobile) {
+                margin-left: 2em;
+            }
         }
 
         .section__icon {
@@ -54,6 +75,11 @@
             width: 40px;
             display: inline-block;
             float: left;
+
+            @include media($lg-mobile) {
+                height: 50px;
+                width: 50px;
+            }
         }
 
         .skill__icon {
@@ -62,11 +88,20 @@
             height: 15px;
             float: left;
             display: inline-block;
+
+            @include media($lg-mobile) {
+                width: 25px;
+                height: 25px;
+            }
         }
 
         .skill__text {
             margin-left: 1.5em;
             color: $color-contrast;
+
+            @include media($lg-mobile) {
+                margin-left: 2em;
+            }
         }
 
 

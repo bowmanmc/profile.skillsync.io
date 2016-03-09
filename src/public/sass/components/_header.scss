@@ -49,6 +49,11 @@
     svg {
         height: 20px;
         width: 20px;
+
+        @include media($lg-mobile) {
+            height: 25px;
+            width: 25px;
+        }
     }
 
 }

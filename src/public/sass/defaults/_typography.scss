@@ -8,7 +8,7 @@ body, p, li, a {
   color: $color-txt;
 
   @include media($lg-mobile) {
-    font-size: modular-scale(1, 0.9em);
+    font-size: modular-scale(1, 0.8em);
   }
 
   @include media($tablet-portrait) {
@@ -37,7 +37,7 @@ h1 {
   font-size: modular-scale(6, 0.7em);
 
   @include media($lg-mobile) {
-    font-size: modular-scale(5, 0.9em);
+    font-size: modular-scale(5, 0.8em);
   }
 
   @include media($tablet-portrait) {
@@ -58,7 +58,7 @@ h2 {
   font-size: modular-scale(4, 0.7em);
 
   @include media($lg-mobile) {
-    font-size: modular-scale(4, 0.9em);
+    font-size: modular-scale(4, 0.8em);
   }
 
   @include media($tablet-portrait) {
@@ -79,7 +79,7 @@ h3 {
   font-size: modular-scale(3, 0.7em);
 
   @include media($lg-mobile) {
-    font-size: modular-scale(3, 0.9em);
+    font-size: modular-scale(3, 0.8em);
   }
 
   @include media($tablet-portrait) {
@@ -100,7 +100,7 @@ h4 {
   font-size: modular-scale(2, 0.7em);
 
   @include media($lg-mobile) {
-    font-size: modular-scale(2, 0.9em);
+    font-size: modular-scale(2, 0.8em);
   }
 
   @include media($tablet-portrait) {
@@ -121,7 +121,7 @@ h5 {
   font-size: modular-scale(1, 0.7em);
 
   @include media($lg-mobile) {
-    font-size: modular-scale(1, 0.9em);
+    font-size: modular-scale(1, 0.8em);
   }
 
   @include media($tablet-portrait) {

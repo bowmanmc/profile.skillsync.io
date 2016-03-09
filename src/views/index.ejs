@@ -13,23 +13,26 @@
         <div class="headshot"></div>
 
         <h1><%= account.name %></h1>
-        <span class="header__title"><%= resume.category %></span>
+        <div class="header__title"><%= resume.category %></div>
 
         <% include partials/social %>
+
+        <hr>
+
     </header>
     <!-- /Header Box -->
 
     <div class="resume">
 
         <section class="skills">
-            <h2>
-                <span class="section__icon">
-                    <svg>
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-list2"></use>
-                    </svg>
-                </span>
-                Skills
-            </h2>
+            <div>
+                <svg class="section__icon">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-list2"></use>
+                </svg>
+                <h2>
+                    Skills
+                </h2>
+            </div>
             <ul>
                 <% resume.skills.forEach(function(skill) { %>
                     <li><%= skill %></li>
@@ -38,28 +41,28 @@
         </section>
 
         <section class="summary">
-            <h2>
-                <span class="section__icon">
-                    <svg>
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-address-book"></use>
-                    </svg>
-                </span>
-                Profile
-            </h2>
+            <div>
+                <svg class="section__icon">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-address-book"></use>
+                </svg>
+                <h2>
+                    Profile
+                </h2>
+            </div>
             <p>
                 <%= resume.summary %>
             </p>
         </section>
 
         <section class="projects">
-            <h2>
-                <span class="section__icon">
-                    <svg>
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-embed2"></use>
-                    </svg>
-                </span>
-                Projects
-            </h2>
+            <div>
+                <svg class="section__icon">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-embed2"></use>
+                </svg>
+                <h2>
+                    Projects
+                </h2>
+            </div>
 
             <% resume.projects.forEach(function(project) { %>
                 <div class="item">
@@ -72,14 +75,12 @@
                     </ul>
                     <ul class="links">
                         <li>
-                            <div class="item__project">
-                                <a href="<%= project.url %>">
-                                    <svg class="link__icon">
-                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-sphere"></use>
-                                    </svg>
-                                    <span class="link-txt"><%= project.name %></span>
-                                </a>
-                            </div>
+                            <a href="<%= project.url %>">
+                                <svg class="link__icon">
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-sphere"></use>
+                                </svg>
+                                <span class="link-txt"><%= project.name %></span>
+                            </a>
                         </li>
                         <li>
                             <a href="<%= project.repo %>">
@@ -95,14 +96,14 @@
         </section>
 
         <section class="work">
-            <h2>
-                <span class="section__icon">
-                    <svg>
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-office"></use>
-                    </svg>
-                </span>
-                Employment History
-            </h2>
+            <div>
+                <svg class="section__icon">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-office"></use>
+                </svg>
+                <h2>
+                    Employment History
+                </h2>
+            </div>
             <% resume.work.forEach(function(job) { %>
                 <div class="item">
                     <h3><%= job.name %></h3>
@@ -114,7 +115,7 @@
                                 <svg class="link__icon">
                                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-sphere"></use>
                                 </svg>
-                                <span class="link-txt"><%= job.url %></span>
+                                <span class="link-txt"><%= job.name %></span>
                             </a>
                         </li>
                     </ul>
@@ -123,14 +124,14 @@
         </section>
 
         <section class="education">
-            <h2>
-                <span class="section__icon">
-                    <svg>
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-books"></use>
-                    </svg>
-                </span>
-                Education and Certifications
-            </h2>
+            <div>
+                <svg class="section__icon">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-books"></use>
+                </svg>
+                <h2>
+                    Education and Certifications
+                </h2>
+            </div>
             <% resume.education.forEach(function(school) { %>
                 <div class="item">
                     <h3><%= school.name %></h3>

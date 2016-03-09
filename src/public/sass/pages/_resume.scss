@@ -14,7 +14,7 @@
             letter-spacing: 0.065em;
             text-transform: uppercase;
             color: $color-resume-navy;
-            margin-bottom: 0.25em;
+            margin: 0 0 0.25em 55px;
         }
 
         h3 {
@@ -24,7 +24,7 @@
 
         p, li {
             width: 73%;
-            margin: 1em auto 0 auto;
+            margin: 1em 0 0 55px;
         }
 
         .links a {
@@ -40,21 +40,21 @@
         .link__icon {
             width: 20px;
             height: 20px;
+            vertical-align: middle;
+            float: left;
+            display: inline-block;
         }
 
-
+        .link-txt {
+            margin-left: 0.25em;
+        }
 
         .section__icon {
-
-            svg {
-                fill: $color-resume-navy;
-                height: 30px;
-                width: 30px;
-                margin-right: 10px;
-            }
+            fill: $color-resume-navy;
+            height: 40px;
+            width: 40px;
+            display: inline-block;
+            float: left;
         }
-
-
-
     }
 }

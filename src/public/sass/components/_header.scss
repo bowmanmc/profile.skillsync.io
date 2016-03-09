@@ -16,7 +16,7 @@
     font-size: modular-scale(1);
     width: 100%;
     text-align: center;
-    margin: 0 auto;
+    margin-bottom: 1.5em;
 }
 
 .social {
@@ -24,7 +24,7 @@
 
     li {
         display: inline;
-        margin: 10px;
+        margin: 0.5em;
     }
 
     a {
@@ -36,8 +36,13 @@
     }
 
     svg {
-        height: 1.25em;
-        width: 1.25em;
+        height: 20px;
+        width: 20px;
     }
+
+hr {
+    width: 80%;
+    color: $color-resume-navy;
+}
 
 }

@@ -1,6 +1,6 @@
 .header {
     color: $color-resume-navy;
-    margin-bottom: 2em;
+    margin-bottom: 1.5em;
 
 
     h1 {
@@ -8,6 +8,16 @@
         text-align: center;
         letter-spacing: 0.05em;
 
+    }
+
+    hr {
+        width: auto;
+        margin: 0 2em;
+        height: 1px;
+        color: $color-resume-navy;
+        background-color: $color-resume-navy;
+        border: none;
+        margin-top: 1.5em;
     }
 }
 
@@ -39,10 +49,5 @@
         height: 20px;
         width: 20px;
     }
-
-hr {
-    width: 80%;
-    color: $color-resume-navy;
-}
 
 }

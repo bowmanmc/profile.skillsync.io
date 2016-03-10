@@ -1,4 +1,4 @@
-$modular-scale-base: 1em;
+$modular-scale-base: 0.8em;
 $heading-stack: "Oswald", "Arial", sans-serif;
 $body-stack: "Merriweather", "Georgia", serif;
 
@@ -8,15 +8,15 @@ body, p, li, a {
   color: $color-txt;
 
   @include media($lg-mobile) {
-    font-size: modular-scale(1, 0.8em);
+    font-size: modular-scale(1);
   }
 
   @include media($tablet-portrait) {
-    font-size: modular-scale(1, 0.9em);
+    font-size: modular-scale(1);
   }
 
   @include media ($tablet-landscape) {
-    font-size: modular-scale(1, 0.9em);
+    font-size: modular-scale(1);
   }
 
   @include media ($desktop) {
@@ -37,15 +37,15 @@ h1 {
   font-size: modular-scale(6, 0.7em);
 
   @include media($lg-mobile) {
-    font-size: modular-scale(5, 0.8em);
+    font-size: modular-scale(5);
   }
 
   @include media($tablet-portrait) {
-    font-size: modular-scale(5, 0.9em);
+    font-size: modular-scale(5);
   }
 
   @include media ($tablet-landscape) {
-    font-size: modular-scale(5, 0.9em);
+    font-size: modular-scale(5);
   }
 
   @include media ($desktop) {
@@ -58,15 +58,15 @@ h2 {
   font-size: modular-scale(4, 0.7em);
 
   @include media($lg-mobile) {
-    font-size: modular-scale(4, 0.8em);
+    font-size: modular-scale(4);
   }
 
   @include media($tablet-portrait) {
-    font-size: modular-scale(4, 0.9em);
+    font-size: modular-scale(4);
   }
 
   @include media ($tablet-landscape) {
-    font-size: modular-scale(4, 0.9em);
+    font-size: modular-scale(4);
   }
 
   @include media ($desktop) {
@@ -79,15 +79,15 @@ h3 {
   font-size: modular-scale(3, 0.7em);
 
   @include media($lg-mobile) {
-    font-size: modular-scale(3, 0.8em);
+    font-size: modular-scale(3);
   }
 
   @include media($tablet-portrait) {
-    font-size: modular-scale(3, 0.9em);
+    font-size: modular-scale(3);
   }
 
   @include media ($tablet-landscape) {
-    font-size: modular-scale(3, 0.9em);
+    font-size: modular-scale(3);
   }
 
   @include media ($desktop) {
@@ -100,15 +100,15 @@ h4 {
   font-size: modular-scale(2, 0.7em);
 
   @include media($lg-mobile) {
-    font-size: modular-scale(2, 0.8em);
+    font-size: modular-scale(2);
   }
 
   @include media($tablet-portrait) {
-    font-size: modular-scale(2, 0.9em);
+    font-size: modular-scale(2);
   }
 
   @include media ($tablet-landscape) {
-    font-size: modular-scale(2, 0.9em);
+    font-size: modular-scale(2);
   }
 
   @include media ($desktop) {
@@ -121,15 +121,15 @@ h5 {
   font-size: modular-scale(1, 0.7em);
 
   @include media($lg-mobile) {
-    font-size: modular-scale(1, 0.8em);
+    font-size: modular-scale(1);
   }
 
   @include media($tablet-portrait) {
-    font-size: modular-scale(1, 0.9em);
+    font-size: modular-scale(1);
   }
 
   @include media ($tablet-landscape) {
-    font-size: modular-scale(1, 0.9em);
+    font-size: modular-scale(1);
   }
 
   @include media ($desktop) {

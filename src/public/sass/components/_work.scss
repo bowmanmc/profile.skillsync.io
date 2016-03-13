@@ -1,0 +1,9 @@
+.work {
+    @include media($tablet-landscape) {
+        @include span-columns(10);
+
+        .item {
+            @include span-columns(6);
+        }
+    }
+}

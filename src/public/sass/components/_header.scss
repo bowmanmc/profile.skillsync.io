@@ -1,6 +1,6 @@
 .header {
     color: $color-resume-navy;
-    margin-bottom: 1.5em;
+    //margin-bottom: 1.5em;
 
 
     h1 {
@@ -12,12 +12,11 @@
 
     hr {
         width: auto;
-        margin: 0 2em;
+        margin: 2em 2em 0 2em;
         height: 1px;
         color: $color-resume-navy;
         background-color: $color-resume-navy;
         border: none;
-        margin-top: 1.5em;
     }
 }
 
@@ -28,6 +27,18 @@
     text-align: center;
     margin-bottom: 1.5em;
     color: $color-resume-navy;
+
+    @include media($lg-mobile) {
+        font-size: modular-scale(2);
+    }
+
+    @include media($tablet-portrait) {
+        font-size: modular-scale(2);
+    }
+
+    @include media($tablet-landscape) {
+        font-size: modular-scale(2);
+    }
 }
 
 .social {
@@ -35,7 +46,7 @@
 
     li {
         display: inline;
-        margin: 0.5em;
+        margin: 0 0.5em;
     }
 
     a {
@@ -51,6 +62,16 @@
         width: 20px;
 
         @include media($lg-mobile) {
+            height: 25px;
+            width: 25px;
+        }
+
+        @include media($tablet-portrait) {
+            height: 25px;
+            width: 25px;
+        }
+
+        @include media($tablet-landscape) {
             height: 25px;
             width: 25px;
         }

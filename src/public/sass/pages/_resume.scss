@@ -6,15 +6,25 @@
 
     color: $color-txt;
 
+    @include media($tablet-portrait) {
+        padding: 2em;
+    }
+
+    @include media($tablet-landscape) {
+        @include span-columns(10);
+        @include shift(1.5);
+    }
+
     section {
 
-        margin: 0.5em 0 2.5em 0;
+        margin-top: 2em;
+        margin-bottom: 0.5em;
 
         h2 {
             letter-spacing: 0.065em;
             text-transform: uppercase;
             color: $color-resume-navy;
-            margin: 0 0 0.25em 55px;
+            margin-left: 55px;
 
             @include media($lg-mobile) {
                 margin-left: 65px;
@@ -23,11 +33,15 @@
             @include media($tablet-portrait) {
                 margin-left: 70px;
             }
+
+            @include media($tablet-landscape) {
+                margin-left: 70px;
+            }
         }
 
         h3 {
             width: 83%;
-            margin: 0.5em 0 0 40px;
+            margin: 0.75em 0 0 40px;
 
             @include media ($lg-mobile) {
                 margin-left: 50px;
@@ -36,11 +50,15 @@
             @include media($tablet-portrait) {
                 margin-left: 55px;
             }
+
+            @include media($tablet-landscape) {
+                margin-left: 0px;
+            }
         }
 
         p, li {
             width: 73%;
-            margin: 1em 0 0 55px;
+            margin: 1.25em 0 0 55px;
 
             @include media($lg-mobile) {
                 margin-left: 65px;
@@ -48,6 +66,11 @@
 
             @include media($tablet-portrait) {
                 margin-left: 70px;
+            }
+
+            @include media($tablet-landscape) {
+                width: 100%;
+                margin-left: 0px;
             }
         }
 
@@ -76,6 +99,11 @@
                 width: 25px;
                 height: 25px;
             }
+
+            @include media($tablet-landscape) {
+                width: 25px;
+                height: 25px;
+            }
         }
 
         .link-txt {
@@ -86,6 +114,10 @@
             }
 
             @include media($tablet-portrait) {
+                margin-left: 30px;
+            }
+
+            @include media($tablet-landscape) {
                 margin-left: 30px;
             }
         }
@@ -103,6 +135,11 @@
             }
 
             @include media($tablet-portrait) {
+                height: 55px;
+                width: 55px;
+            }
+
+            @include media($tablet-landscape) {
                 height: 55px;
                 width: 55px;
             }
@@ -124,6 +161,11 @@
                 width: 25px;
                 height: 25px;
             }
+
+            @include media($tablet-landscape) {
+                width: 25px;
+                height: 25px;
+            }
         }
 
         .skill__text {
@@ -135,6 +177,10 @@
             }
 
             @include media($tablet-portrait) {
+                margin-left: 30px;
+            }
+
+            @include media($tablet-landscape) {
                 margin-left: 30px;
             }
         }

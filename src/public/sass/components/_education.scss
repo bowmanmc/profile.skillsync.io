@@ -1,8 +1,4 @@
-.projects {
-    .item {
-        margin-top: 2em;
-    }
-
+.education {
     @include media($tablet-landscape) {
         @include span-columns(12);
 
@@ -10,6 +6,7 @@
             @include span-columns(6);
             padding-right: 35px;
             margin-top: 0px;
+            margin-right: 0px;
         }
     }
 }

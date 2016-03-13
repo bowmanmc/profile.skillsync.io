@@ -39,6 +39,10 @@
     @include media($tablet-landscape) {
         font-size: modular-scale(2);
     }
+
+    @include media($desktop) {
+        font-size: modular-scale(2);
+    }
 }
 
 .social {
@@ -72,6 +76,11 @@
         }
 
         @include media($tablet-landscape) {
+            height: 25px;
+            width: 25px;
+        }
+
+        @include media($desktop) {
             height: 25px;
             width: 25px;
         }

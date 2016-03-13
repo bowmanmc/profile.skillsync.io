@@ -3,5 +3,7 @@
         @include span-columns(5);
     }
 
-
+    @include media($desktop) {
+        @include span-columns(5);
+    }
 }

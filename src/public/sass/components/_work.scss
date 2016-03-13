@@ -6,4 +6,12 @@
             @include span-columns(6);
         }
     }
+
+    @include media($desktop) {
+        @include span-columns(10);
+
+        .item {
+            @include span-columns(6);
+        }
+    }
 }

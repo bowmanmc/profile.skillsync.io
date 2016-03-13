@@ -2,4 +2,8 @@
     @include media($tablet-landscape) {
         @include span-columns(6);
     }
+
+    @include media($desktop) {
+        @include span-columns(6);
+    }
 }

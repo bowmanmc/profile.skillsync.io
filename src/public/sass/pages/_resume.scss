@@ -15,6 +15,11 @@
         @include shift(1.5);
     }
 
+    @include media($desktop) {
+        @include span-columns(10);
+        @include shift(1.5);
+    }
+
     section {
 
         margin-top: 2em;
@@ -37,6 +42,10 @@
             @include media($tablet-landscape) {
                 margin-left: 70px;
             }
+
+            @include media($desktop) {
+                margin-left: 70px;
+            }
         }
 
         h3 {
@@ -54,6 +63,10 @@
             @include media($tablet-landscape) {
                 margin-left: 0px;
             }
+
+            @include media($desktop) {
+                margin-left: 0px;
+            }
         }
 
         p, li {
@@ -69,6 +82,11 @@
             }
 
             @include media($tablet-landscape) {
+                width: 100%;
+                margin-left: 0px;
+            }
+
+            @include media($desktop) {
                 width: 100%;
                 margin-left: 0px;
             }
@@ -104,6 +122,11 @@
                 width: 25px;
                 height: 25px;
             }
+
+            @include media($desktop) {
+                width: 25px;
+                height: 25px;
+            }
         }
 
         .link-txt {
@@ -118,6 +141,10 @@
             }
 
             @include media($tablet-landscape) {
+                margin-left: 30px;
+            }
+
+            @include media($desktop) {
                 margin-left: 30px;
             }
         }
@@ -140,6 +167,11 @@
             }
 
             @include media($tablet-landscape) {
+                height: 55px;
+                width: 55px;
+            }
+
+            @include media($desktop) {
                 height: 55px;
                 width: 55px;
             }
@@ -166,6 +198,11 @@
                 width: 25px;
                 height: 25px;
             }
+
+            @include media($desktop) {
+                width: 25px;
+                height: 25px;
+            }
         }
 
         .skill__text {
@@ -181,6 +218,10 @@
             }
 
             @include media($tablet-landscape) {
+                margin-left: 30px;
+            }
+
+            @include media($desktop) {
                 margin-left: 30px;
             }
         }

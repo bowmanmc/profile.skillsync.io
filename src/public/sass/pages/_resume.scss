@@ -28,7 +28,8 @@ $icon-size-lg: 24px;
         margin-bottom: 0.5em;
 
         h2 {
-            letter-spacing: 0.065em;
+            //border-bottom: 1px solid $color-resume-navy;
+            letter-spacing: 0.125em;
             text-transform: uppercase;
             color: $color-resume-navy;
             margin-left: 55px;

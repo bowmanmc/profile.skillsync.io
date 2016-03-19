@@ -121,7 +121,7 @@
             <% resume.work.forEach(function(job) { %>
                 <div class="item">
                     <h3><%= job.name %></h3>
-                    <p><%= job.duration %></p>
+                    <p class="duration"><%= job.duration %></p>
                     <p><%= job.summary %></p>
                     <ul class="links">
                         <li>
@@ -149,7 +149,7 @@
             <% resume.education.forEach(function(school) { %>
                 <div class="item">
                     <h3><%= school.name %></h3>
-                    <p><%= school.duration %></p>
+                    <p class="duration"><%= school.duration %></p>
                     <p><%= school.credential %></p>
                 </div>
             <% }) %>

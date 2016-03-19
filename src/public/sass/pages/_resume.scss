@@ -3,12 +3,11 @@ $icon-size-sm: 15px;
 $icon-size-lg: 24px;
 
 .resume {
+    color: $color-txt;
+    fill: $color-txt;
     padding: 1.0em;
 
     @include outer-container(100%);
-
-    color: $color-txt;
-    fill: $color-txt;
 
     @include media($tablet-portrait) {
         padding: 2em;
@@ -96,16 +95,6 @@ $icon-size-lg: 24px;
         }
         p {
             margin-top: 0.25em;
-        }
-
-        .links a {
-            fill: $color-resume-navy;
-            color: $color-resume-navy;
-
-            &:hover {
-                fill: $color-contrast;
-                color: $color-contrast;
-            }
         }
 
         .link__icon {

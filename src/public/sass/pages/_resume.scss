@@ -5,6 +5,7 @@
     @include outer-container(100%);
 
     color: $color-txt;
+    fill: $color-txt;
 
     @include media($tablet-portrait) {
         padding: 2em;
@@ -178,7 +179,6 @@
         }
 
         .skill__icon {
-            fill: $color-contrast;
             width: 15px;
             height: 15px;
             float: left;
@@ -207,7 +207,6 @@
 
         .skill__text {
             margin-left: 20px;
-            color: $color-contrast;
 
             @include media($lg-mobile) {
                 margin-left: 30px;

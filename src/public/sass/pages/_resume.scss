@@ -5,12 +5,12 @@ $icon-size-lg: 24px;
 .resume {
     color: $color-txt;
     fill: $color-txt;
-    padding: 1.0em;
+    padding: 2.0em;
 
     @include outer-container(100%);
 
     @include media($tablet-portrait) {
-        padding: 2em;
+        padding: 3.0em;
     }
 
     @include media($tablet-landscape) {
@@ -93,9 +93,6 @@ $icon-size-lg: 24px;
                 width: 100%;
                 margin-left: 0px;
             }
-        }
-        p {
-            //margin-top: 0.25em;
         }
 
         .link__icon {

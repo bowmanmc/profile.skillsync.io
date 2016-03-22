@@ -16,6 +16,21 @@
         color: $color-resume-navy;
         background-color: $color-resume-navy;
         border: none;
+
+        @include media($tablet-portrait) {
+            margin-right: 3.0em;
+            margin-left: 3.0em;
+        }
+
+        @include media($tablet-landscape) {
+            margin-right: 3.0em;
+            margin-left: 3.0em;
+        }
+
+        @include media($desktop) {
+            margin-right: 3.0em;
+            margin-left: 3.0em;
+        }
     }
 }
 

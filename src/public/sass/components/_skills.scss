@@ -1,9 +1,11 @@
 .skills {
     @include media($tablet-landscape) {
-        @include span-columns(6);
+        @include span-columns(4);
+        float: right;
     }
 
     @include media($desktop) {
-        @include span-columns(6);
+        @include span-columns(4);
+        float: right;
     }
 }

@@ -1,9 +1,12 @@
 .work {
-    @include media($tablet-landscape) {
-        @include span-columns(12);
+    width: 85%;
+    margin-left: 100px;
+
+    .work__duration {
+        margin: 1em 0 0.5em 0;
     }
 
-    @include media($desktop) {
-        @include span-columns(12);
+    work__summary {
+        margin: 1em 0 0.5em 0;
     }
 }

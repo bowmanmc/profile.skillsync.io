@@ -1,25 +1,19 @@
 .projects {
-    .item {
-        margin-top: 2em;
+
+    width: 85%;
+    margin-left: 100px;
+
+    .projects__description {
+        width: 90%;
+        margin-bottom: 1.25em;
     }
 
-    @include media($tablet-landscape) {
-        @include span-columns(12);
-
-        .item {
-            @include span-columns(6);
-            padding-right: 35px;
-            margin-top: 0px;
-        }
+    .projects__list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
     }
 
-    @include media($desktop) {
-        @include span-columns(12);
 
-        .item {
-            @include span-columns(6);
-            padding-right: 35px;
-            margin-top: 0px;
-        }
-    }
 }

@@ -1,124 +1,57 @@
 
-$icon-size-sm: 15px;
-$icon-size-lg: 24px;
+$link-icon-sm: 15px;
+$link-icon-lg: 20px;
+$skill-icon-sm: 50px;
+$skill-icon-lg: 50px;
 
-.resume {
+
+body {
     color: $color-txt;
     fill: $color-txt;
-    padding: 2.0em;
-
-    @include outer-container(100%);
-
-    @include media($tablet-portrait) {
-        padding: 3.0em;
-    }
-
-    @include media($tablet-landscape) {
-        @include span-columns(10);
-        @include shift(1.5);
-    }
-
-    @include media($desktop) {
-        @include span-columns(10);
-        @include shift(1.5);
-    }
 
     section {
-        margin-top: 2em;
-        margin-bottom: 0.5em;
-
-        h2 {
-            //border-bottom: 1px solid $color-resume-navy;
-            letter-spacing: 0.125em;
-            text-transform: uppercase;
-            color: $color-resume-navy;
-            margin-left: 55px;
-
-            @include media($lg-mobile) {
-                margin-left: 65px;
-            }
-
-            @include media($tablet-portrait) {
-                margin-left: 70px;
-            }
-
-            @include media($tablet-landscape) {
-                margin-left: 70px;
-            }
-
-            @include media($desktop) {
-                margin-left: 70px;
-            }
-        }
 
         h3 {
             width: 83%;
-            margin: 0.75em 0 0 40px;
-
-            @include media ($lg-mobile) {
-                margin-left: 50px;
-            }
-
-            @include media($tablet-portrait) {
-                margin-left: 55px;
-            }
-
-            @include media($tablet-landscape) {
-                margin-left: 0px;
-            }
-
-            @include media($desktop) {
-                margin-left: 0px;
-            }
         }
 
-        p, li {
-            width: 73%;
-            margin: 0.9em 0 0 55px;
+        .item {
+            margin-top: 1.5em;
+            width: 50%;
+        }
 
-            @include media($lg-mobile) {
-                margin-left: 65px;
-            }
+        .links {
+            margin: 1.25em 0;
 
-            @include media($tablet-portrait) {
-                margin-left: 70px;
-            }
-
-            @include media($tablet-landscape) {
-                width: 100%;
-                margin-left: 0px;
-            }
-
-            @include media($desktop) {
-                width: 100%;
-                margin-left: 0px;
+            li {
+                margin: 0.25em 0;
             }
         }
 
         .link__icon {
-            width: $icon-size-sm;
-            height: $icon-size-sm;
+            width: $link-icon-sm;
+            height: $link-icon-sm;
             float: left;
             display: inline-block;
 
             @include media($lg-mobile) {
-                width: $icon-size-lg;
-                height: $icon-size-lg;
+                width: $link-icon-lg;
+                height: $link-icon-lg;
             }
 
             @include media($tablet-portrait) {
-                width: $icon-size-lg;
-                height: $icon-size-lg;
+                width: $link-icon-lg;
+                height: $link-icon-lg;
             }
 
             @include media($tablet-landscape) {
-                width: $icon-size-lg;
-                height: $icon-size-lg;
+                width: $link-icon-lg;
+                height: $link-icon-lg;
             }
 
             @include media($desktop) {
-                width: $icon-size-lg;
-                height: $icon-size-lg;
+                width: $link-icon-lg;
+                height: $link-icon-lg;
             }
         }
 
@@ -142,79 +75,42 @@ $icon-size-lg: 24px;
             }
         }
 
-        .section__icon {
-            fill: $color-resume-navy;
-            height: 40px;
-            width: 40px;
-            display: inline-block;
-            float: left;
-
-            @include media($lg-mobile) {
-                height: 50px;
-                width: 50px;
-            }
-
-            @include media($tablet-portrait) {
-                height: 55px;
-                width: 55px;
-            }
-
-            @include media($tablet-landscape) {
-                height: 55px;
-                width: 55px;
-            }
-
-            @include media($desktop) {
-                height: 55px;
-                width: 55px;
-            }
+        .section-title {
+            color: $color-resume-navy;
+            font-family: $heading-stack;
+            font-size: modular-scale(3);
+            letter-spacing: 0.125em;
+            margin: 2.25em 0 0.75em 0;
+            text-align: center;
+            text-transform: uppercase;
+            border-style: solid;
+            border-color: $color-resume-navy;
+            border-width: 2px 0;
+            width: 250px;
+            text-align: center;
         }
 
         .skill__icon {
-            width: $icon-size-sm;
-            height: $icon-size-sm;
-            float: left;
-            display: inline-block;
-
-            @include media($lg-mobile) {
-                width: $icon-size-lg;
-                height: $icon-size-lg;
-            }
-
-            @include media($tablet-portrait) {
-                width: $icon-size-lg;
-                height: $icon-size-lg;
-            }
-
-            @include media($tablet-landscape) {
-                width: $icon-size-lg;
-                height: $icon-size-lg;
-            }
+            width: $skill-icon-sm;
+            height: $skill-icon-sm;
 
             @include media($desktop) {
-                width: $icon-size-lg;
-                height: $icon-size-lg;
+                width: $skill-icon-lg;
+                height: $skill-icon-lg;
             }
         }
 
-        .skill__text {
-            margin-left: 20px;
-
-            @include media($lg-mobile) {
-                margin-left: 30px;
-            }
-
-            @include media($tablet-portrait) {
-                margin-left: 30px;
-            }
-
-            @include media($tablet-landscape) {
-                margin-left: 30px;
-            }
-
-            @include media($desktop) {
-                margin-left: 30px;
-            }
+        .skilllist {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            text-align: center;
         }
+
+        .skilllist__skill {
+            width: 33.3%;
+        }
+
     } // .section
 } // .resume

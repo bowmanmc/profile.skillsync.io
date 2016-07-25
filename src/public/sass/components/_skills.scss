@@ -1,11 +1,14 @@
+$skill-icon-sm: 50px;
+$skill-icon-lg: 50px;
+
 .skills {
-    @include media($tablet-landscape) {
-        @include span-columns(4);
-        float: right;
+
+    .skilllist {
+        width: 70%;
+        margin: 2.25em auto 0 auto;
     }
 
-    @include media($desktop) {
-        @include span-columns(4);
-        float: right;
+    .skilllist__skill {
+        margin-bottom: 40px;
     }
 }

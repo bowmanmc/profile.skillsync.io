@@ -1,10 +1,10 @@
-$modular-scale-base: 14px;
+$modular-scale-base: 12px;
 $heading-stack: "Oswald", "Arial", sans-serif;
 $body-stack: "Merriweather", "Georgia", serif;
 
-body, p, li, a {
+body, div, p, li, a {
   font-family: $body-stack;
-  font-size: modular-scale(1, 0.7em);
+  font-size: modular-scale(0.2);
   color: $color-txt;
   line-height: 1.75;
 

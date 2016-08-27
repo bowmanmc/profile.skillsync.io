@@ -12,13 +12,10 @@
         <div class="name">
             <h3><%= account.name %></h3>
         </div>
-
         <hr>
-
         <div class="category">
             <h2><%= resume.category %></h2>
         </div>
-
         <div class="social">
             <% include partials/social %>
         </div>
@@ -33,7 +30,7 @@
                 <li class="skills__skill">
                     <svg class="skills__icon">
                         <use xmlns:xlink="http://www.w3.org/1999/xlink"
-                        xlink:href="#icon-html-five"></use>
+                             xlink:href="#icon-html-five"></use>
                     </svg>
                     <div class="skills__name">
                         <%= skill %>
@@ -59,7 +56,8 @@
                         <% project.skills.forEach(function(skill) { %>
                             <li class="projects__skill">
                                 <svg class="projects-skill__icon">
-                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-html-five"></use>
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                         xlink:href="#icon-html-five"></use>
                                 </svg>
                                 <div class="projects-skill__name">
                                     <%= skill %>
@@ -97,7 +95,8 @@
                             <% project.skills.forEach(function(skill) { %>
                                 <li class="employment__skill">
                                     <svg class="employment-skill__icon">
-                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-html-five"></use>
+                                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                             xlink:href="#icon-html-five"></use>
                                     </svg>
                                     <div class="employment-skill__name">
                                         <%= skill %>

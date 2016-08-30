@@ -1,3 +1,28 @@
 .personal {
-    
+    .name {
+        margin-bottom: 40px;
+    }
+
+    .category {
+        margin: 40px 0;
+    }
+
+    .social {
+        margin: 30px auto;
+        width: 95%;
+        ul {
+            display: flex;
+            justify-content: space-between;
+            li {
+                margin: auto;
+                svg {
+                    width: $link-icon-sm;
+                    height: $link-icon-sm;
+                    fill: $color-teal;
+                    display: block;
+                    margin: auto;
+                }
+            }
+        }
+    }
 }

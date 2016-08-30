@@ -30,7 +30,7 @@ router.get('/', function(req, res) {
             name: 'k80bowman.com',
             url: 'http://www.k80bowman.com',
             repo: 'https://github.com/k80bowman/k80bowman',
-            description: 'My personal website detailing my coding skills.'
+            description: 'My personal website detailing my coding skills.',
             skills: ['HTML', 'Sass', 'Responsive Development']
         }, {
             name: 'The Edge of Uncertainty',
@@ -48,16 +48,16 @@ router.get('/', function(req, res) {
         work: [{
             name: 'Lexis Nexis',
             url: 'http://www.lexisnexis.com/',
-            project-name: 'Newsdesk',
-            project-url: 'http://www.lexisnexis.com/en-us/products/newsdesk.page',
+            projectName: 'Newsdesk',
+            projectUrl: 'http://www.lexisnexis.com/en-us/products/newsdesk.page',
             duration: 'March 2016 to present',
             summary: 'I am a front-end developer working on the Newsdesk product using HTML, CSS, Sass, JavaScript, and Java',
             skills: ['JavaScript', 'Java', 'Sass']
         }, {
             name: 'Miami Valley Regional Planning Comission (MVRPC)',
             url: 'http://www.mvrpc.org',
-            project-name: 'Going Places',
-            project-url: 'http://www.mvrpc.org/regional-planning/going-places-initiative',
+            projectName: 'Going Places',
+            projectUrl: 'http://www.mvrpc.org/regional-planning/going-places-initiative',
             duration: 'March 2006 - August 2012 (6 Years, 6 months)',
             summary: `
                 Project management, Statistical analysis of Census and other socioeconomic data,

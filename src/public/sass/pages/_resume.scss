@@ -1,8 +1,13 @@
 body {
     color: $color-txt;
+    background-color: $color-light;
+    margin: 30px;
 
     section {
-
+        hr {
+            background-color: $color-teal;
+            height: 5px;
+        }
 
     } // .section
 } // .resume

@@ -3,25 +3,3 @@ html, body {
     height: 100%;
     min-height: 100%;
 }
-
-body {
-    background: $color-resume-light url(../images/handmadepaper2.png) top left repeat;
-    color: $color-resume-dark;
-    font-family: $heading-stack;
-}
-
-a {
-    color: $color-resume-navy;
-    fill: $color-resume-navy;
-    cursor: pointer;
-    text-decoration: none;
-
-    &:hover {
-        color: $color-teal;
-        fill: $color-teal;
-    }
-    &:active {
-        color: $color-teal;
-        fill: $color-teal;
-    }
-}

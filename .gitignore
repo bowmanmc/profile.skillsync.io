@@ -11,7 +11,7 @@ reports
 .sass-cache
 .DS_Store
 
-src/public/scripts/site*
-src/public/styles/site*
+src/assets/scripts/*
+src/assets/styles/*
 
 aws.json

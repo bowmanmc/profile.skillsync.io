@@ -1,1 +1,4 @@
-# resume.skillsync.io
+# profile.skillsync.io
+
+npm install
+npm start

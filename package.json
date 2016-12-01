@@ -12,7 +12,7 @@
     "start": "npm run clean && parallelshell \"npm run serve\" \"npm run watch\" \"npm run browsersync\"",
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "parallelshell \"npm run watch:sass\"",
-    "watch:sass": "nodemon -e scss -w src/public/sass -x \"npm run sass\""
+    "watch:sass": "nodemon -e scss -w src/assets/sass -x \"npm run sass\""
   },
   "devDependencies": {
     "autoprefixer": "^6.0.3",

@@ -7,132 +7,26 @@
 
     <% include partials/svg %>
 
-    <!--Personal-->
-    <section class="personal">
-        <div class="name">
-            <h1><%= account.name %></h1>
-        </div>
-        <hr>
-        <div class="category">
-            <h3><%= resume.category %></h3>
-        </div>
-        <div class="social">
-            <% include partials/social %>
-        </div>
-    </section>
-
-    <!--Skills-->
-    <section class="skills">
-        <h2>Skills</h2>
-        <hr>
-        <ul class="skills__list">
-            <% resume.skills.forEach(function(skill) { %>
-                <li class="skills__skill">
-                    <svg class="skills__icon">
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
-                             xlink:href="#icon-html-five"></use>
-                    </svg>
-                    <div class="skills__name">
-                        <%= skill %>
-                    </div>
-                </li>
-            <% }) %>
-        </ul>
-    </section>
-
-    <!--Projects-->
-    <section class="projects">
-        <h2>Portfolio</h2>
-        <hr>
-        <div class="projects__list">
-            <% resume.projects.forEach(function(project) { %>
-                <a href="<%= project.url %>">
-                    <h4 class="projects__title">
-                        <%= project.name %>
-                    </h4>
-                </a>
-                <div class="projects__skills">
-                    <ul>
-                        <% project.skills.forEach(function(skill) { %>
-                            <li class="projects__skill">
-                                <svg class="projects-skill__icon">
-                                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
-                                         xlink:href="#icon-html-five"></use>
-                                </svg>
-                                <div class="projects-skill__name">
-                                    <%= skill %>
-                                </div>
-                            </li>
-                        <% }) %>
-                    </ul>
-                </div>
-                <div class="projects__repo">
-                    <a href="<%= project.repo %>">
-                        <p>Repository</p>
-                    </a>
-                </div>
-                <div class="projects__description">
-                    <p><%= project.description %></p>
-                </div>
-            <% }) %>
+    <section class="header">
+        <div class="profile-info">
+            <h1>Katy Bowman</h1>
+            <h2>Front-End Developer</h2>
+            <div class="profile-info__location">
+                Dayton, Ohio (open to remote)
+            </div>
+            <div class="profile-info__links">
+                <ul>
+                    <li>LinkedIn</li>
+                    <li>GitHub</li>
+                    <li>Twitter</li>
+                    <li>Facebook</li>
+                </ul>
+            </div>
         </div>
     </section>
 
-    <!--Employment-->
-    <section class="employment">
-        <h2>Employment History</h2>
-        <hr>
-        <div class="employment__list">
-            <% resume.work.forEach(function(job) { %>
-                <div class="employment__job">
-                    <a href="<%= job.url %>">
-                        <h4 class="employment__title">
-                            <%= job.name %>
-                        </h4>
-                    </a>
-                    <div class="employment__skills">
-                        <ul>
-                            <% job.skills.forEach(function(skill) { %>
-                                <li class="employment__skill">
-                                    <svg class="employment-skill__icon">
-                                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
-                                             xlink:href="#icon-html-five"></use>
-                                    </svg>
-                                    <div class="employment-skill__name">
-                                        <%= skill %>
-                                    </div>
-                                </li>
-                            <% }) %>
-                        </ul>
-                    </div>
-                    <div class="employment__project">
-                        <a href="<% job.projectUrl %>">
-                            <p><%= job.projectName %></p>
-                        </a>
-                    </div>
-                    <div class="employment__summary">
-                        <p><%= job.summary %></p>
-                    </div>
-                </div>
-            <% }) %>
-        </div>
-    </section>
 
-    <!--Education-->
-    <section class="education">
-        <h2>Education & Certifications</h2>
-        <hr>
-        <div class="education__list">
-            <% resume.education.forEach(function(degree) { %>
-                <div class="education__credential">
-                    <h4><%= degree.credential %></h4>
-                    <a href="<% degree.link %>">
-                        <p><%= degree.name %></p>
-                    </a>
-                </div>
-            <% }) %>
-        </div>
-    </section>
+    <% include partials/footer %>
 </body>
 
 </html>

@@ -1,4 +1,6 @@
 
+$nav-transition: all 0.3s;
+
 .navigation {
     align-items: stretch;
     background: $clr-navbg;
@@ -27,17 +29,18 @@
     align-items: stretch;
     display: flex;
     flex-wrap: nowrap;
-    justify-content: center;
     list-style: none;
     text-align: center;
 
     a {
         color: $clr-navtxt;
-        padding: 0.5em 1.0em;
+        padding: 1.25em 1.5em;
         text-decoration: none;
+        text-shadow: 1px 1px 0 $clr-black;
+        transition: $nav-transition;
 
         &:hover {
-            background: #0f0;;
+            background: $clr-navbg-alt;
             color: $clr-white;
         }
     }

@@ -43,20 +43,27 @@
     a {
         background: rgba($clr-white, 0.5);
         border-radius: 0.25em;
-        padding: 0.25em 1.0em;
+        display: block;
+        margin: 0.5em 0;
+        padding: 0.5em 1.0em;
 
         &:hover {
             background: $clr-white;
         }
     }
+}
 
-    ul {
-        list-style: none;
-        padding: 0;
+.profile-info__link {
+    display: flex;
+
+    i {
+        border-right: 1px solid $clr-link;
+        padding-right: 0.5em;
+        text-align: center;
+        width: 32px;
     }
-
-    li {
-        display: block;
-        margin: 0.75em 0;
+    span {
+        flex: 1;
+        padding-left: 0.5em;
     }
 }

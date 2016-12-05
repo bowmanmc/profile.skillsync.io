@@ -16,25 +16,27 @@
     display: inline-block;
     margin: 0 auto;
     padding: 1.0em 2.0em;
-    text-align: center;
+    text-align: left;
 
     h1 {
         margin: 0.45em 0;
+        text-align: center;
     }
 
     h2 {
         font-family: $font-body;
         font-size: 1.15em;
         margin: 0.25em 0;
+        text-align: center;
+    }
+
+    p {
+        
     }
 
     ul {
         list-style: none;
     }
-}
-
-.profile-info__location {
-    text-align: left;
 }
 
 .profile-info__links {

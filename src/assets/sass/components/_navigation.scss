@@ -1,0 +1,44 @@
+
+.navigation {
+    align-items: stretch;
+    background: $clr-navbg;
+    color: $clr-navtxt;
+    display: flex;
+    font-family: $font-heading;
+
+    .nav__name {
+    }
+
+    .nav__links {
+        flex: 1;
+    }
+
+    .nav__downloads {
+    }
+}
+
+.nav__name {
+    display: flex;
+    font-family: $font-body;
+    font-weight: bold;
+}
+
+.nav__linkctr {
+    align-items: stretch;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    list-style: none;
+    text-align: center;
+
+    a {
+        color: $clr-navtxt;
+        padding: 0.5em 1.0em;
+        text-decoration: none;
+
+        &:hover {
+            background: #0f0;;
+            color: $clr-white;
+        }
+    }
+}

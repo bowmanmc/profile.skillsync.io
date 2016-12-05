@@ -3,5 +3,12 @@ $skillsync-teal: #0b9375;
 $skillsync-gray: #e2e2e3;
 
 
+$clr-white: #fffcf9;
+$clr-black: #000306;
+
 $clr-bodybg: $skillsync-gray;
 $clr-bodytxt: #303639;
+
+//$clr-navbg: #101619;
+$clr-navbg: $clr-black;
+$clr-navtxt: darken($skillsync-gray, 5%);

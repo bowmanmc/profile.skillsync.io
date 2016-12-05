@@ -13,5 +13,6 @@ reports
 
 src/assets/scripts/*
 src/assets/styles/*
+src/assets/fonts/*
 
 aws.json

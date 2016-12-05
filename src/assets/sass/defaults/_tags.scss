@@ -18,3 +18,12 @@ h5,
 h6 {
     font-family: $font-heading;
 }
+
+a {
+    color: $clr-link;
+    text-decoration: none;
+
+    &:hover {
+        color: $clr-link-over;
+    }
+}

@@ -1,0 +1,62 @@
+
+.header {
+    @include outer-container(100%);
+
+    background: url('../images/compe.jpg') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 300px;
+    padding: 2.0em;
+}
+
+.profile-info {
+    background: rgba($clr-white, 0.85);
+    border-radius: 0.45em;
+    box-shadow: 0 0 3.0em rgba($clr-black, 0.65);
+    display: inline-block;
+    margin: 0 auto;
+    padding: 1.0em 2.0em;
+    text-align: center;
+
+    h1 {
+        margin: 0.45em 0;
+    }
+
+    h2 {
+        font-family: $font-body;
+        font-size: 1.15em;
+        margin: 0.25em 0;
+    }
+
+    ul {
+        list-style: none;
+    }
+}
+
+.profile-info__location {
+    text-align: left;
+}
+
+.profile-info__links {
+    margin: 1.0em 0;
+    text-align: left;
+
+    a {
+        background: rgba($clr-white, 0.5);
+        border-radius: 0.25em;
+        padding: 0.25em 1.0em;
+
+        &:hover {
+            background: $clr-white;
+        }
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    li {
+        display: block;
+        margin: 0.75em 0;
+    }
+}

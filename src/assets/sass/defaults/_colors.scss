@@ -13,3 +13,6 @@ $clr-bodytxt: #303639;
 $clr-navbg: $clr-black;
 $clr-navbg-alt: #202020;
 $clr-navtxt: darken($skillsync-gray, 5%);
+
+$clr-link: $skillsync-teal;
+$clr-link-over: lighten($skillsync-teal, 20%);

@@ -14,28 +14,22 @@
     border-radius: 0.45em;
     box-shadow: 0 0 3.0em rgba($clr-black, 0.65);
     display: inline-block;
+    font-size: 0.85rem;
     margin: 0 auto;
     padding: 1.0em 2.0em;
     text-align: left;
 
     h1 {
-        margin: 0.45em 0;
+        font-size: 2.0rem;
+        margin: 0.25em 0;
         text-align: center;
     }
 
     h2 {
         font-family: $font-body;
-        font-size: 1.15em;
-        margin: 0.25em 0;
+        font-size: 1.0rem;
+        margin: 0;
         text-align: center;
-    }
-
-    p {
-        
-    }
-
-    ul {
-        list-style: none;
     }
 }
 
@@ -57,7 +51,10 @@
 }
 
 .profile-info__link {
+    align-items: center;
     display: flex;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
 
     i {
         border-right: 1px solid $clr-link;

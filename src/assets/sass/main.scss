@@ -3,6 +3,7 @@
 // Libraries
 @import 'normalize.css/normalize';
 @import 'font-awesome/scss/font-awesome';
+@import 'devicon/devicon';
 @import 'bourbon/bourbon';
 @import 'neat/neat';
 
@@ -10,5 +11,7 @@
 @import 'defaults/typography';
 @import 'defaults/tags';
 
+@import 'components/content';
 @import 'components/header';
+@import 'components/intro';
 @import 'components/navigation';

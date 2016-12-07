@@ -1,0 +1,18 @@
+
+.skills-top__skills {
+    @include outer-container();
+}
+
+.skills-top__skill {
+
+    @extend .pillbox;
+
+    background: $clr-skill-pill-bg;
+    border-radius: 0.25em;
+    box-shadow: 1px 1px 0 $clr-skill-pill-shadow;
+    color: $clr-skill-pill-txt;
+    float: left;
+    font-size: 20px;
+    margin: 0 0.25em 0.5em 0;
+    padding: 0.25em 0.5em;
+}

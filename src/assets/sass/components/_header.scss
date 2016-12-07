@@ -51,19 +51,7 @@
 }
 
 .profile-info__link {
-    align-items: center;
-    display: flex;
-    font-size: 20px;
-    text-rendering: optimizeLegibility;
+    @extend .pillbox;
 
-    i {
-        border-right: 1px solid $clr-link;
-        padding-right: 0.5em;
-        text-align: center;
-        width: 32px;
-    }
-    span {
-        flex: 1;
-        padding-left: 0.5em;
-    }
+    font-size: 20px;
 }

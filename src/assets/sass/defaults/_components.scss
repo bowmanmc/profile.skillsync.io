@@ -1,0 +1,16 @@
+.pillbox {
+    align-items: center;
+    display: flex;
+    text-rendering: optimizeLegibility;
+
+    i {
+        border-right: 1px solid $clr-link;
+        padding-right: 0.5em;
+        text-align: center;
+        width: 32px;
+    }
+    span {
+        flex: 1;
+        padding-left: 0.5em;
+    }
+}

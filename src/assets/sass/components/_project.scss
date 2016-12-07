@@ -1,0 +1,40 @@
+
+.project {
+
+    margin-bottom: 2.0em;
+
+    h3 {
+        margin: 0;
+    }
+}
+
+.project__meta {
+    color: $clr-project-meta;
+    font-size: 0.8rem;
+    font-style: italic;
+}
+
+.project__links {
+    @include outer-container();
+}
+
+.project__link {
+    @extend .pillbox;
+
+    background: $clr-link;
+    border-radius: 0.25em;
+    box-shadow: 1px 1px 0 $clr-skill-pill-shadow;
+    color: $clr-bodybg;
+    float: left;
+    margin: 0 0.5em 0.5em 0;
+    padding: 0.25em 0.5em;
+
+    &:hover {
+        background: $clr-link-over;
+        color: $clr-white;
+    }
+
+    i {
+        border-right: 1px solid $clr-bodybg;
+    }
+}

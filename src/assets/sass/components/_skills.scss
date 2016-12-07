@@ -1,9 +1,11 @@
 
-.skills-top__skills {
+.skills-list {
     @include outer-container();
+
+    margin: 1.0em 0;
 }
 
-.skills-top__skill {
+.skills-list__skill {
 
     @extend .pillbox;
 
@@ -12,7 +14,29 @@
     box-shadow: 1px 1px 0 $clr-skill-pill-shadow;
     color: $clr-skill-pill-txt;
     float: left;
+    font-size: 12px;
+    margin: 0 0.5em 0.5em 0;
+    padding: 0.25em 0.5em;
+
+    i {
+        width: 20px;
+    }
+}
+
+.skills-top__skills {
+    @extend .skills-list;
+
+    margin-top: 0;
+}
+
+.skills-top__skill {
+
+    @extend .skills-list__skill;
+
     font-size: 20px;
     margin: 0 0.25em 0.5em 0;
-    padding: 0.25em 0.5em;
+
+    i {
+        width: 32px;
+    }
 }

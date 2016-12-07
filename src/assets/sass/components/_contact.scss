@@ -1,0 +1,7 @@
+.contact__links {
+    @extend .links-list;;
+}
+
+.contact__link {
+    @extend .linkpill;
+}

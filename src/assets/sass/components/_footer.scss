@@ -1,8 +1,7 @@
 
 .footer {
-    background: $clr-navbg;
+    background: $clr-footer-bg;
     border-top: 1px solid $clr-white;
-    box-shadow: 0 0 0.5em $clr-black;
-    color: $clr-white;
+    color: $clr-footer-txt;
     min-height: 400px;
 }

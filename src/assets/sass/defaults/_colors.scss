@@ -2,8 +2,17 @@ $skillsync-green: #96c950;
 $skillsync-teal: #0b9375;
 $skillsync-gray: #e2e2e3;
 
+$fl-green-light: #87ae4f;
+$fl-green-dark: #468741;
+$fl-blue-dark: #214576;
+$fl-blue-med: #0d63a1;
+$fl-blue-green: #159399;
+$fl-blue-light: #5ec9d4;
+$fl-blue-gray-dark: #607278;
+$fl-blue-gray-light: #8a9a9a;
 
-$clr-highlight: $skillsync-green;
+
+$clr-highlight: $fl-green-light;
 
 $clr-white: #fffcf9;
 $clr-black: #000306;
@@ -11,16 +20,18 @@ $clr-black: #000306;
 $clr-bodybg: $skillsync-gray;
 $clr-bodytxt: #303639;
 
-//$clr-navbg: #101619;
-$clr-navbg: $clr-black;
-$clr-navbg-alt: #202020;
+$clr-navbg: darken($fl-blue-gray-dark, 30%);
+$clr-navbg-alt: $fl-blue-gray-dark;
 $clr-navtxt: darken($skillsync-gray, 5%);
 
-$clr-link: $skillsync-teal;
-$clr-link-over: lighten($skillsync-teal, 20%);
+$clr-link: $fl-green-dark;
+$clr-link-over: lighten($fl-green-dark, 20%);
 
 $clr-skill-pill-bg: rgba($clr-white, 0.5);
 $clr-skill-pill-shadow: darken($clr-bodybg, 3%);
-$clr-skill-pill-txt: lighten($clr-bodytxt, 20%);
+$clr-skill-pill-txt: $fl-blue-gray-dark;
 
-$clr-project-meta: lighten($clr-bodytxt, 20%);
+$clr-project-meta: $fl-blue-gray-dark;
+
+$clr-footer-bg: $clr-navbg;
+$clr-footer-txt: $skillsync-gray;

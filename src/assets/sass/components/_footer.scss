@@ -25,6 +25,10 @@
     }
 }
 
+.footer__copyright {
+    font-size: 0.65rem;
+}
+
 .footer__info {
     margin: 0.5em;
 }
@@ -43,13 +47,12 @@
 .footer__link {
     @extend .pillbox;
 
-    //background: lighten($clr-footer-bg, 20%);
     background: $clr-footer-link;
     border-radius: 0.25em;
     box-shadow: 1px 1px 0 $clr-black;
     color: $clr-bodybg;
     display: inline-block;
-    margin: 0 0.75em 1.0em 0.5em;
+    margin: 0 0.75em 0 0.5em;
     padding: 0.25em 0.5em;
 
     &:hover {
@@ -62,10 +65,38 @@
     }
 }
 
+.footer__nav {
+    margin-top: 0.5em;
+    padding-left: 1.0em;
+
+    a {
+        background: rgba($clr-white, 0.15);
+        border-radius: 0.25em;
+        box-shadow: 1px 1px 0 $clr-black;
+        color: $clr-white;
+        display: inline-block;
+        margin: 0.25em 0;
+        padding: 0.5em 1.0em;
+
+        &:hover {
+            background: rgba($clr-white, 0.25);
+            color: $clr-white;
+        }
+    }
+}
+
+.footer__nav-section {
+    h2,
+    h3 {
+        color: $clr-white;
+        margin: 0;
+    }
+}
+
 .footer__ohio {
 
     svg {
-        fill: $clr-bodybg;
+        fill: $clr-footer-txt;
         float: left;
         height: 64px;
         margin: 0 1.0em 1.0em 0;

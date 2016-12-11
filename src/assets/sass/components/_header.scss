@@ -33,25 +33,20 @@
     }
 }
 
-.profile-info__links {
-    margin: 1.0em 0;
-    text-align: left;
+.profile-info__skills {
 
-    a {
-        background: rgba($clr-white, 0.5);
-        border-radius: 0.25em;
-        display: block;
-        margin: 0.5em 0;
-        padding: 0.5em 1.0em;
-
-        &:hover {
-            background: $clr-white;
-        }
-    }
 }
 
-.profile-info__link {
-    @extend .pillbox;
+.profile-info__skill {
+    background: $clr-skill-pill-bg;
+    border-radius: 0.25em;
+    box-shadow: 1px 1px 0 $clr-skill-pill-shadow;
+    color: $clr-skill-pill-txt;
+    display: inline-block;
+    margin: 0 0.5em 0.5em 0;
+    padding: 0.25em 0.5em;
 
-    font-size: 20px;
+    i {
+        width: 20px;
+    }
 }

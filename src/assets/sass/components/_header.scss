@@ -34,7 +34,11 @@
 }
 
 .profile-info__skills {
+    @include outer-container(100%);
+}
 
+.profile-info__skill-column {
+    @include span-columns(6);
 }
 
 .profile-info__skill {
@@ -45,8 +49,13 @@
     display: inline-block;
     margin: 0 0.5em 0.5em 0;
     padding: 0.25em 0.5em;
+    white-space: nowrap;
 
     i {
         width: 20px;
+    }
+
+    span {
+        white-space: nowrap;
     }
 }

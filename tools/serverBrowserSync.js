@@ -7,6 +7,8 @@ const proxyOpts = {
 
 browserSync({
     'files': [
+        '!**/*.scss',
+        '!src/assets/javascript/**/*',
         'src/**/*'
     ],
     'watchOptions': {
@@ -20,6 +22,4 @@ browserSync({
     'reloadOnRestart': false,
     'notify': false,
     'open': false
-    //'open': 'local',
-    //'browser': 'chrome',
 });

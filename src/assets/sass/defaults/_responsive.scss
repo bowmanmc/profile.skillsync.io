@@ -1,0 +1,12 @@
+
+$tablet-portrait-width: 768px;
+$tablet-landscape-width: 1024px;
+
+$desktop-width: 1440px;
+
+$tablet-max: $desktop-width - 1;
+
+
+// Breakpoints to use
+$tablet: new-breakpoint(min-width $tablet-portrait-width max-width $tablet-max);
+$desktop: new-breakpoint(min-width $desktop-width);

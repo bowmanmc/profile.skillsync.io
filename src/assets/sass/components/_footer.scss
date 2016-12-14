@@ -10,7 +10,6 @@
     min-height: 400px;
     padding-top: 2.0em;
 
-
     a {
         color: $clr-footer-link;
 
@@ -20,8 +19,21 @@
     }
 
     section {
-        @include span-columns(4);
+        // mobile - full width sections
+        @include span-columns(12);
+
+        // tablet and desktop - 3 columns
+        @include media ($tablet) {
+            @include span-columns(4);
+            @include omega(3n);
+        }
+        @include media ($desktop) {
+            @include span-columns(4);
+            @include omega(3n);
+        }
+
         padding: 1.0em;
+        padding-bottom: 2.0em;
     }
 }
 
